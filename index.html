@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahaboob Ali Shaik — Aspiring Software Engineer & Full-Stack Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Mahaboob Ali Shaik — Computer Science Engineering student and Full-Stack Developer experienced in Java, Python, React, Node.js, SQL, and Cloud Security.">
+  <meta name="keywords" content="Mahaboob Ali Shaik, Software Engineer, Full-Stack Developer, Java, Python, React, Node.js, Portfolio">
+  <meta name="author" content="Mahaboob Ali Shaik">
+  <meta name="theme-color" content="#f7f6f9">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mahaboob Ali Shaik — Portfolio">
+  <meta property="og:description" content="Computer Science Engineering student at RGMCET. Explore projects, technical capabilities, and verified credentials.">
+  <meta property="og:image" content="assets/mahaboob_portrait_clean.png">
+
+  <!-- Google Fonts: Syne, Cormorant Garamond, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Sticky Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo">
+        <span>MAHABOOB ALI SHAIK</span>
+        <span class="logo-dot">.</span>
+      </a>
+
+      <!-- Live Availability Status Indicator -->
+      <div class="status-badge">
+        <span class="status-pulse"></span>
+        <span>Available for Roles</span>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Index</a></li>
+          <li><a href="#profile" class="nav-link">Profile</a></li>
+          <li><a href="#works" class="nav-link">Works</a></li>
+          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls: Theme Toggle & Mobile Menu -->
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <!-- Moon Icon (for Light Mode) -->
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+          <!-- Sun Icon (for Dark Mode) -->
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+        </button>
+
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open mobile navigation">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="drawer-overlay" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); z-index: 1050; opacity: 0; pointer-events: none; transition: opacity 0.3s ease;"></div>
+  <aside id="mobile-drawer" style="position: fixed; top: 0; right: 0; width: 280px; height: 100vh; background: var(--bg-card); z-index: 1100; padding: 2.5rem 2rem; display: flex; flex-direction: column; justify-content: space-between; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); border-left: 1px solid var(--border-subtle);">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+        <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.1rem;">NAVIGATION</span>
+      </div>
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2rem;">
+        <li><a href="#hero" class="mobile-drawer-link" style="font-size: 1.1rem; font-weight: 600;">Index</a></li>
+        <li><a href="#profile" class="mobile-drawer-link" style="font-size: 1.1rem; font-weight: 600;">Profile</a></li>
+        <li><a href="#works" class="mobile-drawer-link" style="font-size: 1.1rem; font-weight: 600;">Works</a></li>
+        <li><a href="#capabilities" class="mobile-drawer-link" style="font-size: 1.1rem; font-weight: 600;">Capabilities</a></li>
+        <li><a href="#journey" class="mobile-drawer-link" style="font-size: 1.1rem; font-weight: 600;">Journey</a></li>
+        <li><a href="#credentials" class="mobile-drawer-link" style="font-size: 1.1rem; font-weight: 600;">Credentials</a></li>
+        <li><a href="#contact" class="mobile-drawer-link" style="font-size: 1.1rem; font-weight: 600;">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="assets/Mahaboob_Ali_Shaik_Resume.pdf" download="Mahaboob_Ali_Shaik_Resume.pdf" class="btn-editorial btn-editorial-primary" style="width: 100%; justify-content: center;">
+        Download CV (PDF)
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid">
+        
+        <!-- Left: Editorial Headline & Actions -->
+        <div class="hero-text-col">
+          <span class="hero-kicker">Aspiring Software Engineer</span>
+          
+          <h1 class="hero-headline">
+            MAHABOOB<br>ALI SHAIK
+          </h1>
+
+          <p class="hero-subhead">
+            Computer Science student passionate about architecting scalable full-stack applications, designing robust APIs, and developing machine learning solutions.
+          </p>
+
+          <p class="hero-bio">
+            Hands-on experience in Java, Python, JavaScript, React, Node.js, SQL, and REST APIs, paired with a disciplined foundation in Data Structures, Algorithms, DBMS, and Cloud Security.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#works" class="btn-editorial btn-editorial-primary">
+              <span>Explore Selected Works</span>
+              <span>→</span>
+            </a>
+
+            <a href="assets/Mahaboob_Ali_Shaik_Resume.pdf" download="Mahaboob_Ali_Shaik_Resume.pdf" class="btn-editorial btn-editorial-outline">
+              <span>Download CV (PDF)</span>
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Prominent Large Bottom-Aligned Portrait -->
+        <div class="hero-portrait-col">
+          <div class="hero-portrait-wrap-large">
+            <div class="portrait-ambient-backdrop"></div>
+            <img src="assets/mahaboob_portrait_hd.png" alt="Mahaboob Ali Shaik - Aspiring Software Engineer" class="hero-portrait-flush">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 01: PROFILE -->
+    <section id="profile" class="editorial-section">
+      <div class="section-grid">
+        <div class="section-header-sticky">
+          <span class="section-index">01</span>
+          <h2 class="section-heading">Profile</h2>
+        </div>
+
+        <div class="section-body-content">
+          <p class="serif-lead">
+            "Applying core computer science fundamentals and modern development practices to engineer reliable, high-performance software."
+          </p>
+
+          <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary);">
+            I am a Computer Science Engineering student with hands-on experience in software development using Java, Python, JavaScript, React, Node.js, SQL, and REST APIs. Experienced in developing full-stack web applications, implementing authentication, integrating external services, and optimizing database workflows.
+          </p>
+
+          <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary);">
+            With a solid foundation in Data Structures and Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, and Cloud Security principles, I actively seek software engineering internship and full-time opportunities to build scalable systems.
+          </p>
+
+          <div class="profile-stats-grid">
+            <div class="stat-pill-box">
+              <span class="stat-pill-label">Academic Standing</span>
+              <div class="stat-pill-value">B.Tech CSE '27 (8.4/10 CGPA)</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">RGMCET</div>
+            </div>
+
+            <div class="stat-pill-box">
+              <span class="stat-pill-label">Base Location</span>
+              <div class="stat-pill-value">Ongole, AP, India</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Open to Remote & On-site</div>
+            </div>
+
+            <div class="stat-pill-box">
+              <span class="stat-pill-label">Natural Languages</span>
+              <div class="stat-pill-value">English, Telugu, Hindi</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Fluent Professional Proficiency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: SELECTED WORKS -->
+    <section id="works" class="editorial-section">
+      <div class="section-grid">
+        <div class="section-header-sticky">
+          <span class="section-index">02</span>
+          <h2 class="section-heading">Selected Works</h2>
+        </div>
+
+        <div class="section-body-content">
+          <div class="works-stack">
+            
+            <!-- PROJECT 1: TRAVEL PLANNER -->
+            <article class="work-item-card">
+              <div class="work-item-header">
+                <h3 class="work-item-title">Travel Planner</h3>
+                <span class="work-item-category">Full-Stack Web Application</span>
+              </div>
+
+              <p class="work-item-desc">
+                Developed a full-stack travel planning web application using React, Node.js, and REST APIs with secure user authentication. Built trip planning, hotel booking, and personalized recommendation modules using API integration.
+              </p>
+
+              <ul class="work-item-bullets">
+                <li class="work-bullet">Integrated 3+ REST APIs to fetch travel destinations and personalized recommendations in real time.</li>
+                <li class="work-bullet">Designed reusable frontend components and scalable backend services to improve application maintainability.</li>
+                <li class="work-bullet">Engineered secure authentication flows and structured end-to-end data pipelines.</li>
+              </ul>
+
+              <div class="tags-row">
+                <span class="tag-badge">React</span>
+                <span class="tag-badge">Node.js</span>
+                <span class="tag-badge">REST APIs</span>
+                <span class="tag-badge">Express</span>
+                <span class="tag-badge">Authentication</span>
+              </div>
+
+              <div class="work-actions-row">
+                <a href="https://github.com/mahaboobali1212/Travel-Planner-WEB-Application" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-editorial-primary">
+                  <span>Explore Repository</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 2: CUSTOMER CHURN PREDICTION SYSTEM -->
+            <article class="work-item-card">
+              <div class="work-item-header">
+                <h3 class="work-item-title">Customer Churn Prediction System</h3>
+                <span class="work-item-category">Machine Learning & Data Science</span>
+              </div>
+
+              <p class="work-item-desc">
+                Developed a predictive machine learning application to forecast customer churn using a dataset containing 7,000+ customer records.
+              </p>
+
+              <ul class="work-item-bullets">
+                <li class="work-bullet">Implemented data preprocessing, missing-value handling, categorical encoding, and feature scaling using Python and Pandas.</li>
+                <li class="work-bullet">Built and evaluated a supervised classification model using Scikit-learn to identify customers at risk of churn.</li>
+                <li class="work-bullet">Identified key churn factors including contract type, tenure, monthly charges, and payment method.</li>
+              </ul>
+
+              <div class="tags-row">
+                <span class="tag-badge">Python</span>
+                <span class="tag-badge">Pandas</span>
+                <span class="tag-badge">Scikit-learn</span>
+                <span class="tag-badge">Supervised Classification</span>
+                <span class="tag-badge">Data Analysis</span>
+              </div>
+
+              <div class="work-actions-row">
+                <a href="https://github.com/mahaboobali1212/churn_prediction-" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-editorial-primary">
+                  <span>Explore Repository</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: CAPABILITIES -->
+    <section id="capabilities" class="editorial-section">
+      <div class="section-grid">
+        <div class="section-header-sticky">
+          <span class="section-index">03</span>
+          <h2 class="section-heading">Capabilities</h2>
+        </div>
+
+        <div class="section-body-content">
+          <p class="serif-lead">
+            Categorized technical capabilities and software engineering competencies verified through production builds and coursework.
+          </p>
+
+          <div class="skills-editorial-grid">
+            
+            <!-- Programming Languages -->
+            <div class="skill-category-block">
+              <h3 class="skill-category-name">Programming Languages</h3>
+              <div class="skill-chips-wrap">
+                <span class="skill-chip">Java</span>
+                <span class="skill-chip">Python</span>
+                <span class="skill-chip">JavaScript</span>
+                <span class="skill-chip">SQL</span>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category-block">
+              <h3 class="skill-category-name">Frontend Engineering</h3>
+              <div class="skill-chips-wrap">
+                <span class="skill-chip">React</span>
+                <span class="skill-chip">HTML5</span>
+                <span class="skill-chip">CSS3</span>
+                <span class="skill-chip">Responsive UI</span>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category-block">
+              <h3 class="skill-category-name">Backend & APIs</h3>
+              <div class="skill-chips-wrap">
+                <span class="skill-chip">Node.js</span>
+                <span class="skill-chip">REST APIs</span>
+                <span class="skill-chip">API Integration</span>
+                <span class="skill-chip">Authentication Services</span>
+              </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category-block">
+              <h3 class="skill-category-name">Database Systems</h3>
+              <div class="skill-chips-wrap">
+                <span class="skill-chip">MySQL</span>
+                <span class="skill-chip">MongoDB</span>
+                <span class="skill-chip">DBMS</span>
+                <span class="skill-chip">Schema Modeling</span>
+              </div>
+            </div>
+
+            <!-- Core Computer Science -->
+            <div class="skill-category-block">
+              <h3 class="skill-category-name">Core Computer Science</h3>
+              <div class="skill-chips-wrap">
+                <span class="skill-chip">Data Structures & Algorithms</span>
+                <span class="skill-chip">Object-Oriented Programming (OOP)</span>
+                <span class="skill-chip">Operating Systems</span>
+                <span class="skill-chip">Computer Networks</span>
+              </div>
+            </div>
+
+            <!-- Cloud & Security -->
+            <div class="skill-category-block">
+              <h3 class="skill-category-name">Cloud & Security</h3>
+              <div class="skill-chips-wrap">
+                <span class="skill-chip">AWS Cloud</span>
+                <span class="skill-chip">Zero Trust Security</span>
+                <span class="skill-chip">Networking Fundamentals</span>
+                <span class="skill-chip">Secure Connectivity</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Developer Tools & Strengths -->
+          <div style="background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 1.75rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;">Developer Tools & Core Engineering Strengths</h3>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">Jupyter Notebook</span>
+              <span class="skill-chip">Problem Solving</span>
+              <span class="skill-chip">Analytical Thinking</span>
+              <span class="skill-chip">Team Collaboration</span>
+              <span class="skill-chip">Communication</span>
+              <span class="skill-chip">Time Management</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: JOURNEY -->
+    <section id="journey" class="editorial-section">
+      <div class="section-grid">
+        <div class="section-header-sticky">
+          <span class="section-index">04</span>
+          <h2 class="section-heading">Journey</h2>
+        </div>
+
+        <div class="section-body-content">
+          <div class="timeline-editorial-list">
+            
+            <!-- Smart Bridge - Sustainable Smart City -->
+            <div class="timeline-editorial-row">
+              <div class="timeline-meta-col">
+                <span class="timeline-date-label">Internship</span>
+                <span class="timeline-type-label">Smart Bridge</span>
+              </div>
+              <div class="timeline-content-col">
+                <h3 class="timeline-role-title">Sustainable Smart City Intern</h3>
+                <div class="timeline-org-sub">Weather Forecasting & Parameter Analysis</div>
+                <ul class="timeline-bullets-list">
+                  <li class="timeline-bullet">Developed a Python-based weather forecasting application to predict temperature, humidity, and rainfall.</li>
+                  <li class="timeline-bullet">Collected, cleaned, and analyzed datasets from multiple weather parameters to prepare data for prediction.</li>
+                  <li class="timeline-bullet">Collaborated with a small project team to develop, test, and present the application during the internship.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Smart Bridge - Subscription Waste Detector -->
+            <div class="timeline-editorial-row">
+              <div class="timeline-meta-col">
+                <span class="timeline-date-label">Internship</span>
+                <span class="timeline-type-label">Smart Bridge</span>
+              </div>
+              <div class="timeline-content-col">
+                <h3 class="timeline-role-title">Subscription Waste Detector Intern</h3>
+                <div class="timeline-org-sub">Pattern Analysis & Optimization Logic</div>
+                <ul class="timeline-bullets-list">
+                  <li class="timeline-bullet">Developed a Subscription Waste Detector application to identify unused and duplicate subscriptions.</li>
+                  <li class="timeline-bullet">Designed and implemented application logic to analyze subscription usage patterns and flag unnecessary services.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Zscaler Virtual Internship -->
+            <div class="timeline-editorial-row">
+              <div class="timeline-meta-col">
+                <span class="timeline-date-label">Virtual Internship</span>
+                <span class="timeline-type-label">Zscaler</span>
+              </div>
+              <div class="timeline-content-col">
+                <h3 class="timeline-role-title">Zero Trust Cloud Security & Networking Intern</h3>
+                <div class="timeline-org-sub">Secure Connectivity & Traffic Architecture</div>
+                <ul class="timeline-bullets-list">
+                  <li class="timeline-bullet">Gained hands-on understanding of networking fundamentals, network traffic flow, and secure connectivity.</li>
+                  <li class="timeline-bullet">Gained hands-on exposure to authentication, secure access, cloud connectivity, and network security concepts.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Education: B.Tech -->
+            <div class="timeline-editorial-row">
+              <div class="timeline-meta-col">
+                <span class="timeline-date-label">Expected 2027</span>
+                <span class="timeline-type-label">Academic Degree</span>
+              </div>
+              <div class="timeline-content-col">
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role-title">B. Tech in Computer Science Engineering</h3>
+                  <span class="gpa-pill-badge">CGPA: 8.4 / 10</span>
+                </div>
+                <div class="timeline-org-sub">Rajeev Gandhi Memorial College of Engineering & Technology (RGMCET)</div>
+              </div>
+            </div>
+
+            <!-- Education: Intermediate -->
+            <div class="timeline-editorial-row">
+              <div class="timeline-meta-col">
+                <span class="timeline-date-label">Completed</span>
+                <span class="timeline-type-label">Intermediate</span>
+              </div>
+              <div class="timeline-content-col">
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role-title">Intermediate (MPC)</h3>
+                  <span class="gpa-pill-badge">Score: 93.5%</span>
+                </div>
+                <div class="timeline-org-sub">Hyderabad Institute of Excellence, Vikarabad</div>
+              </div>
+            </div>
+
+            <!-- Education: SSC -->
+            <div class="timeline-editorial-row">
+              <div class="timeline-meta-col">
+                <span class="timeline-date-label">Completed</span>
+                <span class="timeline-type-label">Secondary School</span>
+              </div>
+              <div class="timeline-content-col">
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role-title">Secondary School (SSC)</h3>
+                  <span class="gpa-pill-badge">Score: 100%</span>
+                </div>
+                <div class="timeline-org-sub">Narayana E-Techno High School, Kandukur</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CREDENTIALS & LEADERSHIP -->
+    <section id="credentials" class="editorial-section">
+      <div class="section-grid">
+        <div class="section-header-sticky">
+          <span class="section-index">05</span>
+          <h2 class="section-heading">Credentials</h2>
+        </div>
+
+        <div class="section-body-content">
+          <div class="credentials-grid">
+            
+            <!-- AWS -->
+            <div class="credential-item-box">
+              <div class="credential-icon">☁️</div>
+              <div class="credential-details">
+                <span class="credential-title">AWS Certified Cloud Practitioner</span>
+                <span class="credential-issuer">Amazon Web Services (AWS)</span>
+                <span style="font-size: 0.75rem; color: var(--accent-purple); margin-top: 0.2rem; font-weight: 600;">Issued: Mar 2025 · Valid Until: Mar 2028</span>
+              </div>
+            </div>
+
+            <!-- MongoDB -->
+            <div class="credential-item-box">
+              <div class="credential-icon">🍃</div>
+              <div class="credential-details">
+                <span class="credential-title">MongoDB Associate Developer Certification</span>
+                <span class="credential-issuer">MongoDB · Issued: 2025</span>
+              </div>
+            </div>
+
+            <!-- Salesforce -->
+            <div class="credential-item-box">
+              <div class="credential-icon">⚡</div>
+              <div class="credential-details">
+                <span class="credential-title">Salesforce Certified Agentforce Specialist</span>
+                <span class="credential-issuer">Salesforce</span>
+              </div>
+            </div>
+
+            <!-- LinkedIn PM -->
+            <div class="credential-item-box">
+              <div class="credential-icon">📘</div>
+              <div class="credential-details">
+                <span class="credential-title">Project Management Foundations</span>
+                <span class="credential-issuer">LinkedIn Learning</span>
+              </div>
+            </div>
+
+            <!-- LeetCode Problem Solving -->
+            <a href="https://leetcode.com/u/shaik_Mahaboob_Ali/" target="_blank" rel="noopener noreferrer" class="credential-item-box" style="text-decoration: none;">
+              <div class="credential-icon">💻</div>
+              <div class="credential-details">
+                <span class="credential-title">LeetCode Algorithmic Problem Solving</span>
+                <span class="credential-issuer">Profile: @shaik_Mahaboob_Ali · Explore Solutions ↗</span>
+              </div>
+            </a>
+
+            <!-- Hackathons -->
+            <div class="credential-item-box">
+              <div class="credential-icon">🏆</div>
+              <div class="credential-details">
+                <span class="credential-title">Hackathons & Coding Competitions</span>
+                <span class="credential-issuer">Collaborative Software Engineering</span>
+              </div>
+            </div>
+
+            <!-- Technical Workshops -->
+            <div class="credential-item-box">
+              <div class="credential-icon">💡</div>
+              <div class="credential-details">
+                <span class="credential-title">Technical Workshops & Events</span>
+                <span class="credential-issuer">Hands-on Software Solution Building</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: CONTACT SECTION -->
+    <section id="contact" class="contact-section-layout">
+      <h2 class="contact-headline">
+        Let's build something remarkable.
+      </h2>
+
+      <div class="contact-content-grid">
+        <div>
+          <p style="font-size: 1.15rem; line-height: 1.7; color: var(--text-secondary);">
+            I am actively seeking Software Engineer internships and full-stack development roles where I can contribute programming skills and learn from high-impact teams.
+          </p>
+
+          <div class="contact-big-links">
+            <a href="mailto:mahaboobali12129@gmail.com" class="contact-big-link">
+              <span>mahaboobali12129@gmail.com</span>
+              <span style="font-size: 1.2rem;">↗</span>
+            </a>
+
+            <a href="tel:+918500951212" class="contact-big-link">
+              <span>+91 8500951212</span>
+              <span style="font-size: 1.2rem;">↗</span>
+            </a>
+          </div>
+
+          <div style="margin-top: 2rem; font-size: 0.95rem; color: var(--text-muted);">
+            Base Location: Ongole, Andhra Pradesh, India
+          </div>
+        </div>
+
+        <div>
+          <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 1.5rem;">CHANNELS & NETWORKS</span>
+          <ul class="social-links-vertical">
+            <li class="social-link-item">
+              <a href="mailto:mahaboobali12129@gmail.com">
+                <span>Email Dispatch</span>
+                <span>↗</span>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="https://github.com/mahaboobali1212" target="_blank" rel="noopener noreferrer">
+                <span>GitHub Repository</span>
+                <span>↗</span>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="https://leetcode.com/u/shaik_Mahaboob_Ali/" target="_blank" rel="noopener noreferrer">
+                <span>LeetCode Profile</span>
+                <span>↗</span>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <span>LinkedIn Profile</span>
+                <span>↗</span>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="assets/Mahaboob_Ali_Shaik_Resume.pdf" download="Mahaboob_Ali_Shaik_Resume.pdf">
+                <span>Download Resume (PDF)</span>
+                <span>↓</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="editorial-footer">
+        <span class="footer-copy">© 2026 Mahaboob Ali Shaik. All Rights Reserved.</span>
+        <span class="footer-note">Designed with Creative Editorial Typography.</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
