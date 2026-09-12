@@ -3,13 +3,15 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Theme Toggle (Light / Dark)
+  // 1. Theme Toggle (Default: Dark Mode)
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
   const htmlEl = document.documentElement;
 
-  // Restore saved preference if any
+  // Restore saved preference if any; default is always dark
   const savedTheme = localStorage.getItem('editorial-theme');
-  if (savedTheme === 'dark') {
+  if (savedTheme === 'light') {
+    htmlEl.classList.remove('dark-theme');
+  } else {
     htmlEl.classList.add('dark-theme');
   }
 
