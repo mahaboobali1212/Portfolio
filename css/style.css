@@ -153,22 +153,32 @@ a {
 }
 
 .header-inner {
-  max-width: 1240px;
+  max-width: 1380px;
   margin: 0 auto;
-  padding: 1.25rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
+}
+
+.header-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-shrink: 0;
 }
 
 .logo {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.2rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .logo-dot {
@@ -179,16 +189,18 @@ a {
 .status-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.9rem;
+  gap: 0.45rem;
+  padding: 0.35rem 0.8rem;
   border-radius: 999px;
   background-color: var(--accent-green-light);
   border: 1px solid rgba(34, 153, 84, 0.25);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   color: var(--accent-green);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .status-pulse {
@@ -198,6 +210,7 @@ a {
   background-color: var(--accent-green);
   box-shadow: 0 0 6px var(--accent-green);
   animation: pulse 2s infinite ease-in-out;
+  flex-shrink: 0;
 }
 
 @keyframes pulse {
@@ -205,19 +218,24 @@ a {
   50% { opacity: 0.4; transform: scale(0.85); }
 }
 
+.desktop-nav {
+  flex-shrink: 1;
+}
+
 .desktop-nav .nav-list {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.1rem;
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.88rem;
+  font-size: 0.83rem;
   font-weight: 500;
   color: var(--text-secondary);
   position: relative;
   padding: 0.25rem 0;
+  white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -957,7 +975,8 @@ html.dark-theme .portrait-ambient-backdrop {
 
 @media (max-width: 768px) {
   .hero-headline {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    white-space: normal;
   }
 
   .contact-headline {

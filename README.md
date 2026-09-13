@@ -1,18 +1,24 @@
 # Mahaboob Ali Shaik - Personal Portfolio ??
 
-> **Aspiring Software Engineer | B.Tech Computer Science Engineering (RGMCET '27)**
+> **Aspiring Software Engineer | Java | Python | Full-Stack Development**  
+> B.Tech Computer Science Engineering (RGMCET '27)
 
-An editorial, high-performance personal portfolio website showcasing full-stack applications, machine learning projects, engineering journey, credentials, and technical skills.
+An editorial, high-performance personal portfolio website showcasing full-stack applications, AI automation, machine learning projects, engineering journey, verified certificates & credentials, and technical capabilities.
 
 ---
 
-## ?? Features
+## ? Features
 
-- **Creative Editorial Design System**: Inspired by Awwwards-winning design layouts with modern typography (`Syne`, `Cormorant Garamond`, `Inter`).
+- **Creative Editorial Design System**: Inspired by modern editorial design layouts with typography (`Syne`, `Cormorant Garamond`, `Inter`).
 - **Interactive Light / Dark Theme**: Smooth theme switching with persistent user preference storage.
 - **Asymmetric Section Layout**: Clean, structured editorial sections from `01 Profile` to `06 Contact`.
-- **Project Showcase**: Detailed case studies for **Travel Planner** and **Customer Churn Prediction System** with direct GitHub links.
-- **Direct Resume Integration**: In-line resume viewing and direct PDF download.
+- **Project Showcase**:
+  - **AI Mobile Testing Agent — Autonomous Multi-Device Android Test Automation** (Python, Streamlit, Gemini API, ADB)
+    - [Live Demo](https://ai-mobile-testing-agent.streamlit.app/)
+  - **Customer Churn Prediction System** (Python, Pandas, Scikit-learn)
+    - [Live Demo](https://customerr-churn-predictionn.streamlit.app/)
+- **Direct Certificates Verification**: One-click verification for AWS Cloud Practitioner, MongoDB Developer, and Microsoft Security certificates.
+- **Direct Resume Integration**: In-line resume viewing and direct PDF download (`assets/Mahaboob_Ali_Shaik_Resume.pdf`).
 - **Responsive & Mobile-Ready**: Fully responsive across mobile, tablet, laptop, and ultrawide displays.
 
 ---
@@ -29,15 +35,15 @@ An editorial, high-performance personal portfolio website showcasing full-stack 
 
 ```text
 portfolio/
-+-- index.html               # Main entry point with semantic editorial layout
++-- index.html                           # Main entry point with semantic editorial layout
 +-- css/
-¦   +-- style.css            # Design system, themes, and responsive rules
+¦   +-- style.css                        # Design system, themes, and responsive rules
 +-- js/
-¦   +-- app.js               # Theme toggling, mobile drawer, scroll spy
+¦   +-- app.js                           # Theme toggling, mobile drawer, scroll spy
 +-- assets/
-¦   +-- mahaboob_portrait_hd.png          # High-definition cut-out portrait
-¦   +-- Mahaboob_Ali_Shaik_Resume.pdf    # Downloadable resume
-+-- README.md                # Project documentation
+¦   +-- mahaboob_portrait_hd.png         # High-definition cut-out portrait
+¦   +-- Mahaboob_Ali_Shaik_Resume.pdf    # Downloadable updated resume (PDF)
++-- README.md                            # Project documentation
 ```
 
 ---
@@ -47,21 +53,22 @@ portfolio/
 ### Local Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mahaboobali1212/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/mahaboobali1212/Portfolio.git
+   cd Portfolio
    ```
 2. Open `index.html` in your browser, or run a local HTTP server:
    ```bash
    # Python 3
-   python -m http.server 3000
+   python -m http.server 8080
    ```
-3. Visit `http://localhost:3000` in your web browser.
+3. Visit `http://localhost:8080` in your web browser.
 
 ---
 
 ## ?? Connect with Me
 
 - **GitHub**: [github.com/mahaboobali1212](https://github.com/mahaboobali1212)
-- **LinkedIn**: [linkedin.com/in/mahaboob-ali-shaik-8380ba287](https://www.linkedin.com/in/mahaboob-ali-shaik-8380ba287)
+- **LinkedIn**: [linkedin.com/in/shaik--mahaboob-ali/](https://www.linkedin.com/in/shaik--mahaboob-ali/)
 - **LeetCode**: [leetcode.com/u/shaik_Mahaboob_Ali](https://leetcode.com/u/shaik_Mahaboob_Ali/)
 - **Email**: [mahaboobali12129@gmail.com](mailto:mahaboobali12129@gmail.com)
+- **Phone**: +91 85009 51212
